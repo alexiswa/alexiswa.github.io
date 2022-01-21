@@ -1,0 +1,39 @@
+[ 79%] Building C object CMakeFiles/replay-sorcery.dir/src/device/svkmsdev.c.o
+[ 81%] Building C object CMakeFiles/replay-sorcery.dir/src/device/x11dev.c.o
+In file included from /home/[removed]/ReplaySorcery/src/device/x11dev.c:20:
+/home/[removed]/ReplaySorcery/src/device/x11dev.h:43:44: error: unknown type name ‘uint32_t’
+   43 | int rsXClientGetKeyCode(RSXClient *client, uint32_t sym);
+      |                                            ^~~~~~~~
+/home/[removed]/ReplaySorcery/src/device/x11dev.c: In function ‘xclientError’:
+/home/[removed]/ReplaySorcery/src/device/x11dev.c:27:9: error: ‘XCB_CONN_ERROR’ undeclared (first use in this function)
+   27 |    case XCB_CONN_ERROR:
+      |         ^~~~~~~~~~~~~~
+/home/[removed]/ReplaySorcery/src/device/x11dev.c:27:9: note: each undeclared identifier is reported only once for each function it appears in
+/home/[removed]/ReplaySorcery/src/device/x11dev.c:29:9: error: ‘XCB_CONN_CLOSED_EXT_NOTSUPPORTED’ undeclared (first use in this function)
+   29 |    case XCB_CONN_CLOSED_EXT_NOTSUPPORTED:
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/[removed]/ReplaySorcery/src/device/x11dev.c:31:9: error: ‘XCB_CONN_CLOSED_MEM_INSUFFICIENT’ undeclared (first use in this function)
+   31 |    case XCB_CONN_CLOSED_MEM_INSUFFICIENT:
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/[removed]/ReplaySorcery/src/device/x11dev.c:33:9: error: ‘XCB_CONN_CLOSED_REQ_LEN_EXCEED’ undeclared (first use in this function)
+   33 |    case XCB_CONN_CLOSED_REQ_LEN_EXCEED:
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/[removed]/ReplaySorcery/src/device/x11dev.c:35:9: error: ‘XCB_CONN_CLOSED_PARSE_ERR’ undeclared (first use in this function)
+   35 |    case XCB_CONN_CLOSED_PARSE_ERR:
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/[removed]/ReplaySorcery/src/device/x11dev.c:37:9: error: ‘XCB_CONN_CLOSED_INVALID_SCREEN’ undeclared (first use in this function)
+   37 |    case XCB_CONN_CLOSED_INVALID_SCREEN:
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/[removed]/ReplaySorcery/src/device/x11dev.c: At top level:
+/home/[removed]/ReplaySorcery/src/device/x11dev.c:101:5: warning: no previous prototype for ‘rsXClientGetKeyCode’ [-Wmissing-prototypes]
+  101 | int rsXClientGetKeyCode(RSXClient *client, uint32_t sym) {
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/[removed]/ReplaySorcery/src/device/x11dev.c:25:12: warning: ‘xclientError’ defined but not used [-Wunused-function]
+   25 | static int xclientError(int error) {
+      |            ^~~~~~~~~~~~
+make[2]: *** [CMakeFiles/replay-sorcery.dir/build.make:401: CMakeFiles/replay-sorcery.dir/src/device/x11dev.c.o] Error 1
+make[2]: Leaving directory '/home/[removed]/ReplaySorcery/bin'
+make[1]: *** [CMakeFiles/Makefile2:133: CMakeFiles/replay-sorcery.dir/all] Error 2
+make[1]: Leaving directory '/home/[removed]/ReplaySorcery/bin'
+make: *** [Makefile:130: all] Error 2
+make: Leaving directory '/home/[removed]/ReplaySorcery/bin'
